@@ -1,0 +1,90 @@
+[bar]
+padding = 0.0
+padding-ends = 0.0
+module-gap = 0.0
+bg = "accent-subtle"
+border-width = 0
+border-color = "blue"
+rounding = "sm"
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    "cava",
+    "hyprland-workspaces",
+]
+center = ["window-title"]
+right = [
+    "idle-inhibit",
+    "network",
+    "bluetooth",
+    "battery",
+    "clock",
+]
+
+[styling]
+scale = 1.0
+
+[styling.palette]
+fg = "#ffffff"
+fg-muted = "#ffffff"
+primary = "#ffffff"
+red = "#f7768e"
+yellow = "#e0af68"
+green = "#9ece6a"
+blue = "#ffffff"
+
+[modules.battery]
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "accent"
+format = ""
+button-bg-color = "transparent"
+
+[modules.bluetooth]
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-show = false
+label-max-length = 7
+button-bg-color = "transparent"
+
+[modules.cava]
+button-bg-color = "transparent"
+
+[modules.clock]
+format = "%I:%M %p"
+icon-show = false
+icon-color = "fg-default"
+button-bg-color = "transparent"
+
+[modules.hyprland-workspaces]
+show-special = false
+display-mode = "icon"
+
+[modules.idle-inhibit]
+startup-duration = 0
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-show = false
+button-bg-color = "transparent"
+
+[modules.network]
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-show = false
+button-bg-color = "transparent"
+
+[modules.window-title]
+icon-color = "fg-default"
+icon-bg-color = "transparent"
+label-show = false
+label-max-length = 45
+button-bg-color = "transparent"
+
+[wallpaper]
+transition-type = "any"
+transition-fps = 144
+cycling-enabled = true
+cycling-directory = "/home/tejas/Photos/Wallpapers/"
+cycling-interval-mins = 1
