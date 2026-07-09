@@ -1,0 +1,24 @@
+2026/07/09-02:10:27.915 1cb8f Reusing MANIFEST /home/tejas/.config/BraveSoftware/Brave-Origin/Default/IndexedDB/https_mail.proton.me_0.indexeddb.leveldb/MANIFEST-000001
+2026/07/09-02:10:27.915 1cb8f Recovering log #20
+2026/07/09-02:10:27.916 1cb8f Reusing old log /home/tejas/.config/BraveSoftware/Brave-Origin/Default/IndexedDB/https_mail.proton.me_0.indexeddb.leveldb/000020.log 
+2026/07/09-02:10:28.846 1cb8e Level-0 table #25: started
+2026/07/09-02:10:28.848 1cb8e Level-0 table #25: 3571 bytes OK
+2026/07/09-02:10:28.850 1cb8e Delete type=0 #20
+2026/07/09-02:10:28.850 1cb8e Manual compaction at level-0 from '\x00\x0a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0a\x00\x00\x05' @ 762 : 1
+2026/07/09-02:10:28.850 1cb8e Compacting 1@0 + 1@1 files
+2026/07/09-02:10:28.851 1cb8e Generated table #26@0: 60 keys, 1298 bytes
+2026/07/09-02:10:28.851 1cb8e Compacted 1@0 + 1@1 files => 1298 bytes
+2026/07/09-02:10:28.853 1cb8e compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/07/09-02:10:28.853 1cb8e Delete type=2 #25
+2026/07/09-02:10:28.853 1cb8e Manual compaction at level-0 from '\x00\x0a\x00\x00\x05' @ 762 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/07/09-02:10:29.543 1cb8e Level-0 table #28: started
+2026/07/09-02:10:29.545 1cb8e Level-0 table #28: 497 bytes OK
+2026/07/09-02:10:29.547 1cb8e Delete type=0 #24
+2026/07/09-02:10:29.547 1cb8e Delete type=2 #22
+2026/07/09-02:10:29.547 1cb8e Manual compaction at level-0 from '\x00\x0b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0b\x00\x00\x05' @ 781 : 1
+2026/07/09-02:10:29.547 1cb8e Compacting 1@0 + 1@1 files
+2026/07/09-02:10:29.548 1cb8e Generated table #29@0: 60 keys, 1302 bytes
+2026/07/09-02:10:29.548 1cb8e Compacted 1@0 + 1@1 files => 1302 bytes
+2026/07/09-02:10:29.549 1cb8e compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/07/09-02:10:29.550 1cb8e Delete type=2 #28
+2026/07/09-02:10:29.550 1cb8e Manual compaction at level-0 from '\x00\x0b\x00\x00\x05' @ 781 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at (end)

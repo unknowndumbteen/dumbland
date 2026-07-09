@@ -2,7 +2,8 @@
 padding = 0.0
 padding-ends = 0.0
 module-gap = 0.0
-bg = "accent-subtle"
+layer = "overlay"
+bg = "#0a0909ae"
 border-width = 0
 border-color = "blue"
 rounding = "sm"
@@ -59,8 +60,14 @@ icon-color = "fg-default"
 button-bg-color = "transparent"
 
 [modules.hyprland-workspaces]
+min-workspace-count = 3
 show-special = false
 display-mode = "icon"
+active-indicator = "underline"
+occupied-color = "accent"
+empty-color = "accent"
+container-bg-color = "transparent"
+border-color = "transparent"
 
 [modules.idle-inhibit]
 startup-duration = 0
