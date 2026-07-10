@@ -2,7 +2,6 @@
 padding = 0.0
 padding-ends = 0.0
 module-gap = 0.0
-layer = "overlay"
 bg = "#0a0909ae"
 border-width = 0
 border-color = "blue"
@@ -26,6 +25,7 @@ right = [
 
 [styling]
 scale = 1.0
+theme-provider = "matugen"
 
 [styling.palette]
 fg = "#ffffff"
@@ -60,7 +60,6 @@ icon-color = "fg-default"
 button-bg-color = "transparent"
 
 [modules.hyprland-workspaces]
-min-workspace-count = 3
 show-special = false
 display-mode = "icon"
 active-indicator = "underline"
@@ -93,5 +92,5 @@ button-bg-color = "transparent"
 transition-type = "any"
 transition-fps = 144
 cycling-enabled = true
-cycling-directory = "/home/tejas/Photos/Wallpapers/"
+cycling-directory = "/home/tejas/Pictures/Wallpapers/"
 cycling-interval-mins = 1
