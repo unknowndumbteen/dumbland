@@ -1,11 +1,15 @@
+[general]
+tearing-mode = true
+
 [bar]
 padding = 0.0
 padding-ends = 0.0
 module-gap = 0.0
+layer = "bottom"
 bg = "#0a0909ae"
 border-width = 0
 border-color = "blue"
-rounding = "sm"
+button-group-rounding = "none"
 
 [[bar.layout]]
 monitor = "*"
@@ -16,7 +20,7 @@ left = [
 ]
 center = ["window-title"]
 right = [
-    "idle-inhibit",
+    "volume",
     "network",
     "bluetooth",
     "battery",
@@ -81,8 +85,16 @@ icon-bg-color = "transparent"
 label-show = false
 button-bg-color = "transparent"
 
+[modules.volume]
+border-color = "transparent"
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-show = false
+label-color = "transparent"
+button-bg-color = "transparent"
+
 [modules.window-title]
-icon-color = "fg-default"
+icon-color = "accent"
 icon-bg-color = "transparent"
 label-show = false
 label-max-length = 45
@@ -92,5 +104,5 @@ button-bg-color = "transparent"
 transition-type = "any"
 transition-fps = 144
 cycling-enabled = true
-cycling-directory = "/home/tejas/Pictures/Wallpapers/"
+cycling-directory = "/home/tejas/Pictures/Wallpapers"
 cycling-interval-mins = 1

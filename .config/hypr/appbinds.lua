@@ -1,7 +1,7 @@
 local terminal    = "kitty"
-local fileManager = "dolphin"
-local menu        = "hyprlauncher"
-local browser = "librewolf"
+local fileManager = "nautilus"
+local menu        = "rofi -show drun"
+local browser = "helium-browser"
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
@@ -16,6 +16,7 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
+hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("wayle power cycle && sleep 0.5 && notify-send \"$(wayle power status)\""))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
@@ -56,8 +57,8 @@ hl.bind(mainMod .. " + Z", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Laptop multimedia keys for volume and LCD brightness
-hl.bind("F3", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
-hl.bind("F2", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })
+hl.bind("F3", hl.dsp.exec_cmd("wayle audio output-volume +5"), { locked = true, repeating = true })
+hl.bind("F2", hl.dsp.exec_cmd("wayle audio output-volume -5"),      { locked = true, repeating = true })
 hl.bind("F1",        hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })
 hl.bind("F4",     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
 hl.bind("F8",  hl.dsp.exec_cmd("brightnessctl set 5%+"),                  { locked = true, repeating = true })
