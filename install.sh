@@ -6,6 +6,8 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg
 sudo cp ./pacman.conf /etc/ 
 sudo pacman -Syu
 sudo pacman -S yay
-yay -S hyprland xdg-desktop-portal-hyprland wayle-bin hyprpolkitagent helium-browser-bin yazi kitty kvantum nautilus wl-clipboard kio-admin power-profiles-daemon gtk3 gtk4 nwg-look matugen awww libnotify rofi brightnessctl 
+yay -S $(cat setup.txt)
 cp -r ./.config/* /home/$USER/.config/
-
+cp -r ./Pictures /home/$USER/
+cp -r ./Videos /home/$USER/
+cp -r ./walls /home/$USER/
